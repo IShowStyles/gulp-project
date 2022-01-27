@@ -1,106 +1,31 @@
-$green-900:#63A60F;
-$green-200:#E0EDCF;
-$green-100:#EFF6E7;
-$dark-900:#121212;
-$dark-800:#31352B;
-$dark-500:#505050;
-$red-900:#CF3E3B;
-$orange-900:#FF7A00;
-$silver-100:#F6F6F6;
-$white:#FFFFFF;
-$card-border:rgba(17, 17, 17, 0.2);
-$slider-bg:rgba(255, 255, 255,0.8);
-$hover-menu:rgba(255, 255, 255,0.1);
-$card-grey:#C1C1C1;
-$silver-100:#F6F6F6;
-$black:#000000 ;
+$main:#FFDEDE;
+$main-text:#FFC7C7;
+$black:#000000;
+$white:#fff;
+$white-card:#F6F5F5;
+$placeholder:#858585;
+$label:#949494;
+$grey2:#4F4F4F;
+$card-text: #605858;
+$add_color:#D4AFAF;
 
-
-
-%opensans-300{
-  font-family: 'OpenSans-Light',sans-serif;
-  font-weight: 300;
-}
-%opensans-400{
-  font-family: 'OpenSans-Regular',sans-serif;
-  font-weight: 400;
-}
-%opensans-600{
-  font-family: 'OpenSans-SemiBold',sans-serif;
-  font-weight: 600;
-}
-%opensans-700{
-  font-family: 'OpenSans-Bold',sans-serif;
-  font-weight: 700;
-}
-
-%ruda-400{
-  font-family: 'Ruda-Regular',sans-serif;
+%roboto-400{
+  font-family: 'Roboto-Regular',sans-serif;
   font-weight: 400;
 }
 
-%ruda-600{
-  font-family: 'Ruda-SemiBold',sans-serif;
-  font-weight: 600;
-}
-%ruda-700{
-  font-family: 'Ruda-Bold',sans-serif;
-  font-weight: 700;
+%roboto-500{
+  font-family: 'Roboto-Medium',sans-serif;
+  font-weight: 500;
 }
 
-%background{  
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-%badge{
-  color: $white;
-  padding: 3px 6px;
-  text-align: center;
-  @extend %opensans-700;
-  font-size: 10px;
-  line-height: 100%;
-  border-radius: 6px;
-  padding: 3px 6px;
-  text-align: center;
-}
-
-%btn{
+%input-find{
   position: relative;
   text-align: center;
-  border: 1px solid transparent;
-  cursor: pointer;
-  padding: 12px 24px;
-  border-radius:6px ;
-  transform:translateX(-50%) ;
-  right: -50%;
-}
-
-%mix-btn{
-  color: $dark-500;
-  @extend %opensans-700;
-  font-size: 15px;
-  border:transparent;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-%item-border{
-  &:hover{
-    border: 1px solid $green-900;
-    transition:border 475ms steps(4 ,end);
-  }
-}
-
-%catalog-line{
-  display: block;
-  position: absolute;
-  content: "";
-  right: 0;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  z-index: 200;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  border: 1.3px solid #3A3030;
+  border-radius: 30px;
+  margin-bottom: 23px;
+  box-shadow: 5.26265px 7.45542px 0.438554px -0.438554px rgba(149, 149, 149, 0.25);
 }

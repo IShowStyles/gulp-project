@@ -1,325 +1,67 @@
 <!DOCTYPE html>
-<html lang="ru">
-@@include('parts/head.html', { 'title': 'Freshok' })
+<html lang="eng">
+@@include('parts/head.html', { 'title': 'MainPage' })
 
 <body>
   @@include('parts/header.html', {})
 
-  <main class="main">
-
-    <section class="top-slider">
-
-
-      <div class="top-slider__inner" id="slider-slick">
-        <div class="top-slider__item" style="background-image: url(img/slide1.png); ">
-          <div class="top-slider__item-content">
-            <h2 class="top-slider__title">
-              свежачок вам в хату<br />
-              <span class="top-slider__subtitle">
-                cкидка -50%
-              </span>
-              <p class="top-slider__text">
-                Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
-              </p>
-            </h2>
-            <a href="#" class="top-slider__link">Купить сейчас</a>
-          </div>
-          <!-- /.top-slider__item-content -->
-        </div>
-        <!-- /.top-slider__item  -->
-        <div class="top-slider__item" style="background-image: url(img/slide2.png); ">
-          <div class="top-slider__item-content">
-            <h2 class="top-slider__title">
-              накрути себе томатов акция: <br />
-              <span class="top-slider__subtitle">
-                3 кг по цене 1
-              </span>
-              <p class="top-slider__text">
-                Только с 12 по 15 июля скидка на домашние помидорчики
-              </p>
-            </h2>
-            <a href="#" class="top-slider__link">Купить сейчас</a>
-          </div>
-          <!-- /.top-slider__item-content -->
-        </div>
-        <!-- /.top-slider__item  -->
-        <div class="top-slider__item" style="background-image: url(img/slide3.png);">
-          <div class="top-slider__item-content">
-            <h2 class="top-slider__title top-slider__title--mb">
-              Пусть остальные позеленеют от зависти <br />
-              <span class="top-slider__subtitle">
-                Распродажа зелени
-              </span>
-            </h2>
-            <a href="#" class="top-slider__link">Купить сейчас</a>
-          </div>
-          <!-- /.top-slider__item-content -->
-        </div>
-      </div>
-
-      <!-- /.top-slider__item  -->
-
-
-      
-      <!-- /.top-slider__inner -->
-
-      <!-- /.container -->
-    </section>
-    <!-- /.top-slider -->
-
-    <section class="catalog-info">
-      <div class="info">
-        <div class="container" >
-          <div class="info-wrapper">
-          <div class="info-item info-item__deliver">
-            <h3 class="info-title">
-              Бесплатная доставка
-            </h3>
-            <p class="info-text">
-              Для заказов на сумму от 500 ₽
-            </p>
-          </div>
-          <div class="info-item info-item__refound">
-            <h3 class="info-title">
-              Возврат товара
-            </h3>
-            <p class="info-text">
-              Если товары были испорчены
-            </p>
-          </div>
-          <div class="info-item info-item__hours">
-            <h3 class="info-title">
-              Поддержка 24/7
-            </h3>
-            <p class="info-text">
-              Лучшие операторы
-            </p>
-          </div>
-        </div>
-        <!-- /.info -->
-      </div>
-    </div>
-    </section>
-    <div class="catalog" >
-      <div class="container" data-ref="mix-1" >
-        <h4 class="title">
-          Топовые товары
-        </h4>
-        <ul class="catalog-categories">
-          <li class="catalog-categories__elem">
-            <button  class="mixitup-btn"   data-filter="all" type="button">
-              Все товары
-            </button>
-          </li>
-          <li class="catalog-categories__elem">
-            <button class="mixitup-btn "  data-filter=".category-a" type="button">
-              Фрукты
-            </button>
-          </li>
-          <li class="catalog-categories__elem">
-            <button class="mixitup-btn"  data-filter=".category-b" type="button">
-              Овощи
-            </button>
-          </li>
-          <li class="catalog-categories__elem">
-            <button class="mixitup-btn" data-filter=".category-c" type="button">
-              Напитки
-            </button>
-          </li>
-          <li class="catalog-categories__elem">
-            <button class="mixitup-btn"   data-filter=".category-d" type="button">
-              Бакалея
-            </button>
-          </li>
-        </ul>
-        <div class="catalog-items">
-         <div class="catalog-items__wrapper"  data-ref="mix-1">
-          @@include('parts/card-1.html', {})
-          @@include('parts/card-2.html', {})
-          @@include('parts/card-3.html', {})
-          @@include('parts/card-4.html', {})
-          @@include('parts/card-5.html', {})
-          @@include('parts/card-6.html', {})
-          @@include('parts/card-7.html', {})
-          @@include('parts/card-8.html', {})
-         </div>
-          <!-- /.catalog-item -->
-          <button class="catalog-btn btn">
-            Показать еще
-          </button>
-        </div>
-           <!-- /.catalog-items -->
-           <div class="catalog-banner">
-             <div class="catalog-banner__inner">
-               <div class="catalog-banner__item" style="background-image: url('img/fruits-banner.png');">
-                <p class="catalog-banner__text">
-                  Свежайшие фркуты
-                 </p>
-                 <h4 class="catalog-banner__title">
-                   начни фруктовое лето<br/>
-                   всего от 99 ₽
-                 </h4>
-              
-                   <a href="#" class="catalog-banner__link">
-                    перейти к покупкам
-                   </a>
-                
-               </div>
-               <div class="catalog-elem"  style="background-image: url('img/banner-2.png');">
-                <p class="catalog-elem__text">
-                  сезонная распродажа
-                 </p>
-                 <h4 class="catalog-elem__title">
-                  овощепад <br/>
-                  до -50%
-                 </h4>
-              
-                   <a href="#" class="catalog-elem__link" >
-                    перейти к покупкам
-                   </a>
-                
-               </div>
-               <div class="catalog-elem" style="background-image: url('img/banner-bread.png');">
-                <p class="catalog-elem__text">
-                  ням-ням
-                 </p>
-                 <h4 class="catalog-elem__title">
-                  свежий<br/>
-                  хлебчик
-                 </h4>
-              
-                   <a href="#" class="catalog-elem__link">
-                    перейти к покупкам
-                   </a>
-                
-               </div>
-             </div>
-           </div>
-      </div>
-    </div>
-    <section class="stock" >
-      <div class="container" data-ref="mix-2">
-       <h5 class="title">
-        Акции
-       </h5>
-        <ul class="stock-top">
-          <li class="stock-elem">
-            <button class="mixitup-btn" type="button" data-filter=".products">
-            Все товары
-          </button>
-        </li>
-          <li class="stock-elem">
-            <button class="mixitup-btn" type="button" data-filter=".new">
-            Новинки
-          </button>
-        </li>
-          <li class="stock-elem">
-            <button class="mixitup-btn" type="button" data-filter=".bestseller">
-            хиты
-          </button>
-        </li>
-        </ul>
-        <div class="stock-wrapper" >
-          @@include('parts/stock-item1.html', {})
-          @@include('parts/stock-item2.html', {})
-          @@include('parts/stock-item3.html', {})
-          @@include('parts/stock-item4.html', {})
-          @@include('parts/stock-item5.html', {})
-          @@include('parts/stock-item6.html', {})
-          @@include('parts/stock-item7.html', {})
-          @@include('parts/stock-item8.html', {})
-        </div>
-      </div>
-    </section>
-
-    <section class="partners">
+  <main>
+    <section class="search">
       <div class="container">
-        <h5 class="sr-only">
-          секция ссылки спонсоров 
-        </h5>
-        <ul class="partners-inner">
-          <li class="partners-elem">
-            <a class="partners-link" href="#">
-              <svg class="partners-svg">
-                <use xlink:href="img/sprite.svg#Sprite"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="partners-elem">
-            <a class="partners-link" href="#">
-              <svg class="partners-svg">
-                <use xlink:href="img/sprite.svg#dr-pepper"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="partners-elem">
-            <a class="partners-link" href="#">
-              <svg class="partners-svg">
-                <use xlink:href="img/sprite.svg#Coca-Cola"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="partners-elem">
-            <a class="partners-link" href="#">
-              <svg class="partners-svg">
-                <use xlink:href="img/sprite.svg#pepsi"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="partners-elem">
-            <a class="partners-link" href="#">
-              <svg class="partners-svg">
-                <use xlink:href="img/sprite.svg#redbull"></use>
-            </svg>
-            </a>  
-          </li>
-          <li class="partners-elem">
-            <a class="partners-link" href="#">
-              <svg class="partners-svg">
-                <use xlink:href="img/sprite.svg#fanta"></use>
-            </svg>
-            </a>
-          </li>
-        </ul>
-        
-      </div>      
-    </section>
-    <section class="news">
-      <div class="container">
-        <h6 class="news-title title">
-          наши новости      
-        </h6>
-        <div class="news-inner">
-         @@include('parts/news-card.html', { 
-          "title": "июль",
-          "url" : "img/news-card.jpg",
-          "num":"15",
-          "text":"Событие этого лета: распродажа сезонных фруктов в  онлайн-маркете ФрешОК. Торопись, пока всё не разобрали!"
-         })
-         @@include('parts/news-card.html', { 
-          "title": "май",
-          "url" : "img/news-card2.png",
-          "num":"07",
-          "text":"Шикарнейший выбор манго в нашем онлайн-маркете"
-         })
-         @@include('parts/news-card.html', { 
-          "title": "Февраль",
-          "url" : "img/news-card3.png",
-          "num": "20",
-          "text":"Всё, что вы хотели знать о папайя"
-         })
-        </div>
+        <form class="search-form" action="#">
+          <input class="search-input" type="text" placeholder="Find Project" >
+          <label class="search-label">All blockchain community programs </label>
+        </form>
+        <div class="search-info">
+          <div class="search-info__top">
+            <form class="search-info__form" action="#" >
+
+              <div class="search-info__form-item">
+                <span class="search-info__input" >
+                  <span class="search-info__content">
+                  </span></span>
+                <label class="search-info__text">Tech</label>
+              </div>
+     
+              <div class="search-info__form-item">
+                <span class="search-info__input" >
+                  <span class="search-info__content"></span>
+                </span>
+                <label class="search-info__text">Community</label>
+              </div>
+      -->
+            </form>
+
+            <select class="search-filter"  id="3">
+              <option class="search-filter__option" value="theme">Data</option>
+              <option class="search-filter__option" >Latest</option>
+              <option class="search-filter__option" >Newlest</option>
+              <option class="search-filter__option" >Ascending</option>
+              <option class="search-filter__option" >Descending</option>
+            </select>
+          </div>
+          <div class="search-info__bottom">
+            <div class="search-info__bottom-wrapper">
+              @@include('parts/main-card.html', { })
+              @@include('parts/main-card.html', { })
+              @@include('parts/main-card.html', { })
+              @@include('parts/main-card.html', { })
+              @@include('parts/main-card.html', { })
+              @@include('parts/main-card.html', { })
+            </div>
+          </div> -->
+          <!-- /.search-info__top -->
+       </div>
+        <p class="search-info__add">More</p>
       </div>
     </section>
   </main>
 
   @@include('parts/footer.html', {})
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
- 
-
+</body>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </html>
