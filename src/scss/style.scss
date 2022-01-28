@@ -44,7 +44,8 @@
       line-height: 120%
     }
   }
-  &-menu{
+  &-menu__btn{
+    @extend %background;
     display: none;
   }
 }
@@ -224,6 +225,20 @@
       &:not(:last-child){
         margin-right: 61px;
       }
+    }
+  }
+}
+
+.menu{
+	&-list{		
+		display: none;
+  }
+  &-link{
+    &__footer-text{
+      display: none;
+      font-size: 20px;
+      color: $menu-color;
+      @extend %roboto-400;
     }
   }
 }

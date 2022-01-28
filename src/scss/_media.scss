@@ -129,23 +129,35 @@
 @media(max-width:428px) {
 
   .header{
+    position: relative;
     padding-top: 21px;
     &-input{
       display: block;
+      &__none{
+        z-index: -11;
+          &::placeholder{
+            color: transparent;
+          }
+      }
     }
     &-requisities{
       display: none;
     }
-    &-menu{
+    &-menu__btn{
       display: block;
-      @extend %background;
       background-image: url('../img/arrow-menu.png');
       border: transparent;
       background-color: transparent;
       width: 34px;
       height: 34px;
       padding: 0;
+      left: 14px;
+      top: 22px;
       cursor: pointer;
+      transition: transform 350ms linear;
+      &--active{
+        transform:rotateY(-180deg) ;
+      }
     }
     &-elem{
       &__img{
@@ -153,5 +165,68 @@
         height: 48px;
       }
   }
+  &__active{
+    background-color: $main-text;
+  }
+  }
+
+.menu{
+  &-item{
+    padding: 34px 15px 0 0;
+    &:last-child{
+      margin-bottom: 222px;
+    }
+    }
+   &:first-child{
+    padding: 15px 15px 0 0;
+   }
+  }
+	&-list{		
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    display: block;
+    position: absolute;
+    height: 92vh;
+    left: 0;
+    right: 0;
+    top: 75px;
+    background-color: $main-text;
+    transform: translateX(-225%);
+    transition: all 350ms;
+  }
+  &-link{
+    position: relative;
+    display: block;
+    color: $white;
+    &__footer-text{
+      font-size: 20px;
+      color: $menu-color;
+      bottom: 0;
+      &--active{
+        display: block;
+      }
+    }   
+    &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 295px;
+      border-bottom: 2px solid  $white;
+      bottom: -4px;
+      right: 0;
+    
+    } 
+  }
+  &-list.menu-list__active{
+    transform: translateX(0%);
+  }
+}
+
+.logo{
+  &-none{
+    z-index: -11;
   }
 }
