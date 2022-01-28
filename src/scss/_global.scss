@@ -43,44 +43,82 @@ body{
   height: 3px;
 }
 
-@keyframes rotate {
-	100% {
-		transform: rotate(1turn);
-	}
+.select.is-active .select-body{
+	display: block;
 }
 
-.rainbow {
+
+
+.select{
 	position: relative;
-	z-index: 0;
-	border-radius: 10px;
-	overflow: hidden;
-	padding: 2rem;
-	
-	&::before {
-		content: '';
-		position: absolute;
-		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 200%;
-		background-color: #399953;
-		background-repeat: no-repeat;
-		background-size: 50% 50%, 50% 50%;
-		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-		background-image: linear-gradient(rgba(130, 128, 128, 0.86), rgba(130, 128, 128, 0.86)), linear-gradient(rgba(204, 204, 204, 0.79), rgba(204, 204, 204, 0.79)), linear-gradient(#756e6e, #756e6e), linear-gradient(#3A3030, #3A3030);
-		animation: rotate 4s linear infinite;
+	width: 112px;
+	height: 40px;
+	&-item{
+		position: relative;
+		@extend %rubik-400;
+		font-size: 23px;
+		color: $grey2;
+		text-align: center;
+		background-color: $white;
+		transition: background-color .7s linear;
+	&:not(:first-child){
+		&::before{
+				position: absolute;
+				display: inline-block;
+				text-align: center;
+				content: "";
+				z-index: 222;
+				width:70px;
+				border-top:1px solid $black ;
+			}
+		}
+		&:last-child{
+			border-bottom-left-radius:6px ;
+			border-bottom-right-radius:6px ;
+		}
+		&:hover{	
+			background-color: #ccc;
+		}
 	}
-	
-	&::after {
-		content: '';
+	&-head{
+		display: flex;
+		cursor: pointer;
+		width: 112px;
+		height: 40px;
+		background-color: $white;
+		border-radius: 8px;
+		&__border{
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+	&-arrow{
+		&__img{
+			width: 16px;
+			height: 32px;
+		}
+		&__inner{
+			display: flex;
+			align-items: center;
+			flex-shrink: 0;
+			justify-content: center;
+			margin-left: 2px;
+			text-align: center;
+			padding-right: 13px;
+		}
+	}
+	&-current{
+			@extend %rubik-400;
+			font-size: 23px;
+			color: $grey2;
+	}
+	&-body{
+		display: none;
 		position: absolute;
-		z-index: -1;
-		left: 6px;
-		top: 6px;
-		width: calc(100% - 12px);
-		height: calc(100% - 12px);
-		background: white;
-		border-radius: 5px;
+		border-top: 0;
+		left: 0;
+		right: 0;
+		top: 88%;
+		z-index: 101;
 	}
 }

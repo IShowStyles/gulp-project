@@ -13,10 +13,14 @@ $add_color:#D4AFAF;
   font-family: 'Roboto-Regular',sans-serif;
   font-weight: 400;
 }
+%rubik-400{
+  font-family: 'Rubik-Regular',sans-serif;
+  font-weight: 400;
+}
 
-%roboto-500{
-  font-family: 'Roboto-Medium',sans-serif;
-  font-weight: 500;
+%roboto-700{
+  font-family: 'Roboto-Black',sans-serif;
+  font-weight: 700;
 }
 
 %input-find{
@@ -25,7 +29,13 @@ $add_color:#D4AFAF;
   background-image: url("../img/search.png");
   background-repeat: no-repeat;
   border: 1.3px solid #3A3030;
+  cursor: pointer;
   border-radius: 30px;
-  margin-bottom: 23px;
   box-shadow: 5.26265px 7.45542px 0.438554px -0.438554px rgba(149, 149, 149, 0.25);
+  text-shadow: 1.28916px 0.515663px 0.515663px rgba(107, 107, 107, 0.25);
+}
+
+%background{
+  background-repeat: no-repeat;
+  background-size: cover;
 }

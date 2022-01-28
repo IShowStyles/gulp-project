@@ -32,17 +32,20 @@
   }
   &-input{
     display: none;
-    max-width: 220px;
-    height:66px ;
-    background-size: 33px;
-    background-position: 20px center;
-    padding-top: 12px ;
+    max-width: 214px;
+    height:38px ;
+    background-size: 19px;
+    background-position: 12px center;
+    padding:7px 57px 0 57px;
     @extend %input-find;
     &::placeholder{
       color: $placeholder;
-      font-size: 28px;
+      font-size: 18px;
       line-height: 120%
     }
+  }
+  &-menu{
+    display: none;
   }
 }
 
@@ -54,6 +57,7 @@
     padding-top: 12px;
     background-size: 33px;
     background-position: 20px center;
+    margin-bottom: 23px;
     @extend %input-find;
      &::placeholder{
        color: $placeholder;
@@ -112,10 +116,10 @@
        height: 28px;
        border-radius: 2px;
        margin-right: 4px;
-       background-color: $white;
+       background-color: transparent;
      }
      &__add{
-       @extend %roboto-500;
+       @extend %roboto-700;
        font-size: 60px;
        color: $add_color;
        text-align: center;
