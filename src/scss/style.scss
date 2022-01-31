@@ -5,8 +5,8 @@
 @import 'global';
 @import 'plugins';
 
-
 .header{
+  margin-bottom: 119px;
   padding-top: 58px;
   &-wrapper{
     display: flex; 
@@ -36,8 +36,11 @@
     height:38px ;
     background-size: 19px;
     background-position: 12px center;
-    padding:7px 57px 0 57px;
+    padding:7px  57px;
     @extend %input-find;
+    &__block{
+      display: block;
+    }
     &::placeholder{
       color: $placeholder;
       font-size: 18px;
@@ -51,7 +54,7 @@
 }
 
 .search{
-  padding-top: 109px;
+  margin: 0 auto;
    &-input{
     height: 65px;
     width: 364px;
@@ -63,7 +66,6 @@
      &::placeholder{
        color: $placeholder;
        font-size: 30px;
-       line-height: 120%
      }
    }
    &-form{
@@ -71,6 +73,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
     margin-bottom: 66px;
    }
    &-label{
@@ -79,20 +82,21 @@
     line-height: 100%;
    }
    &-info{
+     margin: 0 auto;
      padding-top: 209px;
      max-width: 1236px;
-     margin: 0 auto;
      margin-bottom: 52px;
      &__top{
        display: flex;
        justify-content: space-between;
        margin-bottom: 21px;
        padding-right: 76px;
+       padding-left: 22px;
      }
      &__bottom{
       &-wrapper{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        // grid-template-columns: repeat(3,1fr);
         grid-template-columns: repeat(2,1fr);
         grid-row-gap:122px;
         grid-column-gap:168px;
@@ -139,8 +143,8 @@
 .search{
   &-card{
     border-radius: 36px;
-    width: 547px;
-    height: 292px;    
+    max-width: 547px;
+    max-height: 292px;    
     padding: 36px 51px 43px 56px;
     box-shadow: 6px 7px 2px 4px rgba(108, 100, 100, 0.25);
     background-color: $white-card;
@@ -153,7 +157,7 @@
     &__rate{
       font-size: 36px;
       @extend %roboto-400;
-      color: $card-text;
+      color:#605858;
       margin-right: 4px;
     }
     &__wrapper{
@@ -166,14 +170,14 @@
       &-bottom{
         display: flex;
         justify-content: space-between;
-        font-size: 30px;
         @extend %roboto-400;
-        color: $card-text;
+        color:#605858;
         padding: 0 8px;
       }
     }
     &__rating{
       display: flex;
+      
       width: 140px;
       height: 22px;
       &-wrapper{
@@ -197,7 +201,7 @@
       display: inline-block;
       font-size: 64px;
       @extend %roboto-400;
-      color: $card-text;
+      color:#605858;
     }
   }
 }
@@ -230,7 +234,8 @@
 }
 
 .menu{
-	&-list{		
+	&-content{  
+    transform: translateX(0%);
 		display: none;
   }
   &-link{
@@ -243,5 +248,7 @@
   }
 }
 
+
+  
 @import 'project';
 @import 'media';

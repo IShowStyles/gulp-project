@@ -3,13 +3,18 @@ body{
   font-family:'Roboto', sans-serif ;
   color: $black;
   font-size: 30px;
-  line-height:140%;
 }
 
 .container{
   max-width: 1636px;
   margin: 0 auto;
   padding: 0 15px;
+	&__small{
+		max-width: 750px;
+	}
+	&__small-1{
+		max-width: 1259px;
+	}
 }
 
 .sr-only {
@@ -31,7 +36,7 @@ body{
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: 12px, 14px;
+ 	background-size: 12px, 14px;
   background-image: url('../img/submit.png');
   z-index: 22;
 }
@@ -41,13 +46,12 @@ body{
   border:none ;
   background-color:$white;
   height: 3px;
+	margin: 0 0 15px 0;
 }
 
 .select.is-active .select-body{
 	display: block;
 }
-
-
 
 .select{
 	position: relative;

@@ -1,4 +1,5 @@
 $main:#FFDEDE;
+$main-wrapper:#FDBEBE;
 $main-text:#FFC7C7;
 $black:#000000;
 $white:#fff;
@@ -6,13 +7,28 @@ $white-card:#F6F5F5;
 $placeholder:#858585;
 $label:#949494;
 $grey2:#4F4F4F;
+$grey3:#C3AFAF;
 $card-text: #605858;
 $add_color:#D4AFAF;
 $menu-color: #E1B1B1;
+$project-body:#F8F1F1;
+$project-border:#A89F9F;
+$brown-accent:#CD8585;
+$card-project:#E79C9C;
+$card-text:#986D6D;;
 
+
+%roboto-300{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+}
 %roboto-400{
   font-family: 'Roboto-Regular',sans-serif;
   font-weight: 400;
+}
+%roboto-600{
+  font-family: 'Roboto-Medium',sans-serif;
+  font-weight: 600;
 }
 %rubik-400{
   font-family: 'Rubik-Regular',sans-serif;

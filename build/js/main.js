@@ -6,13 +6,16 @@ $(document).ready(function () {
 
 
   $('.header-menu__btn').on('click', function(){
-    $('.menu-list').toggleClass('menu-list__active'),
+    $('.menu-content').toggleClass('menu-content__active'),
     $('.header').toggleClass('header__active',{delay:350}),
-    $('.logo').toggleClass('logo-none',{delay:350}),
+    $('.logo-img').toggleClass('logo-img__none'),
     $('.header-input').toggleClass('header-input__none'),
     $('.header-menu__btn').toggleClass('header-menu__btn--active'),
-    $('.menu-link__footer-text').toggleClass('menu-link__footer-text--active')
-    
+    $('.menu-link__footer-text').toggleClass('menu-link__footer-text--active'),
+    $('.search-info__top').toggleClass('search-info__top--none'),
+    $('.search-card__rating').toggleClass('search-card__rating--none'),
+    $('.footer').toggleClass('footer--none'),
+    $('.search').toggleClass('search--none')
   });
 
   let select = function () {
