@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('parts/head.html', { 'title': 'Catalog' })
+
+<body>
+  @@include('parts/header.html', {})
+
+  @@include('parts/breadcrumbs.html', {})
+  <main class="main">
+
+    
+
+    <section class="catalog">  
+      <div class="container">
+        <h1 class="catalog__title">Каталог товаров</h1>
+        <div class="catalog__inner">
+         <div class="catalog-filters">
+            <div class="catalog-filters__item">
+              <div class="catalog-filters__item-top">
+                <h2 class="catalog-filters__title">
+                  Категории
+                </h2>
+                <svg class="accordion-svg">
+                  <use xlink:href="img/sprite.svg#drop-accordion"></use>
+              </svg>
+              </div>
+            
+                <ul class="catalog-filters__item-content">
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Овощи и фрукты
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Бакалея
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Молочные продукты 
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Хлеб
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Мясо
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Колбаса
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Рыба
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Алкоголь
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Cыр
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Десерты
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                      Закуски
+                    </a>
+                  </li>
+                  <li class="catalog-filters__elem">
+                    <a href="#" class="catalog-filters__link">
+                     Напитки
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="catalog-filters__item">
+              <div class="catalog-filters__item-top">
+                <h2 class="catalog-filters__title">
+                  Предложения 
+                </h2>
+                <svg class="accordion-svg">
+                  <use xlink:href="img/sprite.svg#drop-accordion"></use>
+              </svg>
+              </div>
+                <form class="catalog-filters__list">
+                    <label class="catalog-filters__list-label">
+                    <input class="catalog-filters__list-input" type="checkbox">
+                    <span  class="catalog-filters__list-checkbox catalog-checkbox">
+                    </span>
+                       Со скидкой
+                  </label>
+                    <label class="catalog-filters__list-label">
+                      <input class="catalog-filters__list-input" type="checkbox">
+                      <span  class="catalog-filters__list-checkbox catalog-checkbox"></span>
+                      Новинка
+                    </label>
+                    <label class="catalog-filters__list-label">
+                    <input class="catalog-filters__list-input" type="checkbox">
+                    <span  class="catalog-filters__list-checkbox catalog-checkbox">
+                    </span>
+                    Хит
+                  </label>
+                </form>
+            </div>
+            <div class="catalog-filters__item">
+              <div class="catalog-filters__item-brand">
+                <h2 class="catalog-filters__title">
+                 Бренд
+                </h2>
+                <svg class="accordion-svg">
+                  <use xlink:href="img/sprite.svg#drop-accordion"></use>
+              </svg>
+              </div>
+                <form class="catalog-filters__form">
+                    <label class="catalog-filters__form-label">
+                    <input class="catalog-filters__form-input" type="checkbox">
+                    <span  class="catalog-filters__form-mark catalog-checkbox">
+                    </span>
+                    CocaCola
+                  </label>
+                    <label class="catalog-filters__form-label">
+                      <input class="catalog-filters__form-input" type="checkbox">
+                      <span  class="catalog-filters__form-mark catalog-checkbox"></span>
+                      Pepsi
+                    </label>
+                    <label class="catalog-filters__form-label">
+                    <input class="catalog-filters__form-input" type="checkbox">
+                    <span  class="catalog-filters__form-mark catalog-checkbox">
+                    </span>
+                    Sprite
+                  </label>
+                    <label class="catalog-filters__form-label">
+                    <input class="catalog-filters__form-input" type="checkbox">
+                    <span  class="catalog-filters__form-mark catalog-checkbox">
+                    </span>
+                    Fanta
+                  </label>
+                    <label class="catalog-filters__form-label">
+                      <input class="catalog-filters__form-input" type="checkbox">
+                      <span  class="catalog-filters__form-mark catalog-checkbox"></span>
+                      RedBull
+                    </label>
+                    <label class="catalog-filters__form-label">
+                    <input class="catalog-filters__form-input" type="checkbox">
+                    <span  class="catalog-filters__form-mark catalog-checkbox">
+                    </span>
+                    Dr Pepper
+                  </label>
+                </form>
+            </div>
+              <div class="catalog-filters__item">
+              <div class="catalog-filters__item-head">
+                <h2 class="catalog-filters__title">
+                  Цена
+                </h2>
+                <svg class="accordion-svg">
+                  <use xlink:href="img/sprite.svg#drop-accordion"></use>
+              </svg>
+              </div>
+                <form class="catalog-filters__item-price">
+                  <div class="catalog-filters__item-buttons">
+                    <div class="catalog-filter__item-box">
+                      <label class="catalog-filters__item-label">от</label>
+                      <input class="catalog-filters__item-from catalog-filters__item-inputs" type="text" value="0" />
+                      <label class="catalog-filters__item-label">₽</label>
+                    </div>
+                    <div class="catalog-filter__item-box">
+                      <label class="catalog-filters__item-label">до</label>
+                      <input class="catalog-filters__item-to catalog-filters__item-inputs" type="text" value="0" />
+                      <label class="catalog-filters__item-label">₽</label>
+                    </div>
+                   
+                  </div>
+                  <div class="catalog-filter__item-slider">
+                    <input class="catalog-filters__item-input" type="text" value="">
+                  </div>
+                </form>
+            </div>
+ 
+          </div>
+          
+          </div>
+           <!-- /.catalog-filters -->
+         </div>
+        <!-- /.catalog__inner -->
+      </div>
+    </section>
+
+  </main>
+
+  @@include('parts/footer.html', {})
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+ 
+
+</html>
