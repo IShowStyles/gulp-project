@@ -37,7 +37,7 @@ const gulp = require("gulp"),
 
 function spriteSvg() {
     return gulp
-        .src("./src/img/icons/**.svg")
+        .src("../src/img/icons/**.svg")
         .pipe(
             svgSprite({
                 mode: {
